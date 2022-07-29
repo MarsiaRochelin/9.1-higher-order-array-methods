@@ -26,7 +26,7 @@ function sortByRuntimeAscending(songs) {
  * @returns {Object[]}
  */
 function sortByArtistNameDescending(songs) {
-  
+  return songs.sort((a, b) => a.artist.toUpperCase() < b.artist.toUpperCase()?1:-1)
 }
 
 /**
