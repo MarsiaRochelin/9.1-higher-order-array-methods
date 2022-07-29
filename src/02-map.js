@@ -40,7 +40,7 @@ function getSongDetails(songs) {
  *  //> [ { "Berlin Tsukin": "Taiyo Ky" }, { Up: "Sebastian Kamae" }, ... ]
  */
 function getTitleAndArtist(songs) {
- 
+  return songs.map(song => {return {[song.title]: song.artist}}) 
 }
 
 module.exports = {
