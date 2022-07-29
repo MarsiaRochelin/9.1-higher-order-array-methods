@@ -23,7 +23,7 @@ function findPinkElephantsByTimestreet(songs) {
  * @returns {Object} A single object.
  */
 function findFirstSongUnderThreeMinutes(songs) {
-  return songs.find(song => song.runtimeInSeconds < 180)
+  return songs.find(song => song.runtimeInSeconds < 180 )
 }
 
 /**
