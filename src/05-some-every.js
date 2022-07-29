@@ -23,7 +23,7 @@ function allSongsAreOverTwoMinutes(songs) {
  * @returns {boolean}
  */
 function anySongIsOverFourMinutes(songs) {
-  
+  return songs.some(song => song.runtimeInSeconds > 240)
 }
 
 /**
